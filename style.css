@@ -145,6 +145,7 @@ border-radius: 20px;
     justify-content: center;
     margin-bottom: 20px;
     margin-left: 1%;
+    
 }
 
 .escudo {
@@ -153,8 +154,8 @@ border-radius: 20px;
     min-width: 70px;
     min-height: 70px;
     margin: 0 10px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .vs {
@@ -419,6 +420,34 @@ nav{
 .inactive{
     display: none;
 }
+.meses{
+    position: inherit;
+    text-align: center;
+    
+}
+.mesesBtn{
+    margin-right: 15px;
+    width: 4.5em;
+    height: 3em;
+    background-color: white;
+    border-style: none;
+    color: var(--primary-hover);
+    
+}
+
+.mesesBtn:hover{
+    border-style: solid;
+    border-color: var(--darktheme);
+    
+    border-width: .15em;
+    cursor: pointer;
+}
+.mesesBtn.clicked{
+    border-style: solid;
+    border-color: var(--primary-hover);
+}
+
+
 
 
                 /*AVERAGE DEVICES*/
@@ -486,24 +515,27 @@ nav{
         
     }
     #calendarioNavBar{
-        font-size: 20px;
+        font-size: 28px;
+        margin-top: 9px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .mainContainer{
         margin-top: -309px;
         transform: scale(0.8);
     }
     .topScreen{
-        margin-top: -54px;
+        margin-top: -78px;
     }
     .body{
         padding-top: 50px;
     }
     .equipos{
         margin-left: 30px;
-        text-align: center;
+        font-size: 14px;
     }
     h5{
-        font-size: 14px;
+        font-size: 12px;
     }
     .estadio{
         margin-left: 120px;
@@ -521,14 +553,19 @@ nav{
         border-top-left-radius: 17px;
     }
     .listIcon{
+        margin-top: -42px;
         margin-left: 40px;
     }
     .escudoCalendario{
         margin-right: 50px;
+        margin-top: 5px;
+    }
+    .torneo{
+        margin-left: 280px;
+        margin-right: 4px;
     }
 
 }
-
 @media only screen and (min-width: 361px) and (max-width: 480px) {
     .infoPartido {
         width: calc(100% - 40px);
@@ -549,5 +586,27 @@ nav{
     }
     .listIcon{
         margin-left: 50px;
+    }
+    .topSquare{
+        width: 109%;
+        border-top-right-radius: 18.9px;
+        border-top-left-radius: 18.9px;
+    }
+    .nombreTorneo{
+        margin-top: 24px;
+    
+    }
+    .torneo{
+        margin-left:280px;
+    }
+}
+@media only screen and (min-width: 482px) and (max-width:607px){
+    .torneo{
+        margin-left: 280px;
+    }
+    .topSquare{
+        width: 109%;
+        border-top-right-radius: 18.9px;
+        border-top-left-radius: 18.9px;
     }
 }
