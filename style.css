@@ -63,7 +63,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding: 1rem;
-    
+    margin-bottom: 50px;  
   
     
 }
@@ -489,7 +489,7 @@ nav{
         font-size: 20px;
     }
     .mainContainer{
-        margin-top: -356px;
+        margin-top: -309px;
         transform: scale(0.8);
     }
     .topScreen{
@@ -500,13 +500,14 @@ nav{
     }
     .equipos{
         margin-left: 30px;
-        
+        text-align: center;
     }
     h5{
         font-size: 14px;
     }
     .estadio{
-        margin-left: 110px;
+        margin-left: 120px;
+        
     }
     .contenedorTorneo{
         margin-left: -50px;
@@ -518,6 +519,12 @@ nav{
         width: 425.6px;
         border-top-right-radius: 17px;
         border-top-left-radius: 17px;
+    }
+    .listIcon{
+        margin-left: 40px;
+    }
+    .escudoCalendario{
+        margin-right: 50px;
     }
 
 }
