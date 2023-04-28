@@ -529,16 +529,17 @@ nav{
 
 }
 
-
 @media only screen and (min-width: 361px) and (max-width: 480px) {
     .infoPartido {
         width: calc(100% - 40px);
+        transform: scale(0.93);
     }
     #calendarioNavBar{
         font-size: 2em;
     }
     .topScreen{
-        margin-top: -75px;
+        margin-top: -78px;
+        position: fixed;
     }
     .body{
         margin-top: 100px;
