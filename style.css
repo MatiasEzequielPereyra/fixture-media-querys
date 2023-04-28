@@ -493,7 +493,7 @@ nav{
         transform: scale(0.8);
     }
     .topScreen{
-        margin-top: -100px;
+        margin-top: -65px;
     }
     .body{
         padding-top: 50px;
@@ -527,4 +527,26 @@ nav{
         margin-right: 50px;
     }
 
+}
+
+
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+    .infoPartido {
+        width: calc(100% - 40px);
+    }
+    #calendarioNavBar{
+        font-size: 2em;
+    }
+    .topScreen{
+        margin-top: -75px;
+    }
+    .body{
+        margin-top: 100px;
+    }
+    .escudoCalendario{
+        margin-right: 80px;
+    }
+    .listIcon{
+        margin-left: 50px;
+    }
 }
