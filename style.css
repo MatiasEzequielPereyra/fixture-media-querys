@@ -406,7 +406,7 @@ nav{
 
 .listIcon:hover{
     cursor: pointer;
-    transform: rotateX('50');    
+    transform: scale(.8);    
 }
 .linea1 , .linea2 , .linea3{
     width: 35px;
