@@ -436,7 +436,7 @@ nav{
 
 .mesesBtn:hover{
     border-style: solid;
-    border-color: var(--darktheme);
+    border-color: var(--primary-hover);
     
     border-width: .15em;
     cursor: pointer;
@@ -486,7 +486,7 @@ nav{
         transform: scale(0.8);
     }
     .topScreen{
-        margin-top: -60px;
+        margin-top: -71px;
         width: 110%;
         margin-left: -18px;
     }
@@ -531,24 +531,15 @@ nav{
         margin-right: 4px;
     }
     .mayo{
-        border-style: solid;
-        border-color: var(--primary-hover);
-        width: 100%;
-        border-radius: 20px;
+        text-align: center;
     
     }
     .junio{
-        border-style: solid;
-        border-color: var(--primary-hover);
-        width: 100%;
-        border-radius: 20px;
+      text-align: center;
     
     }
     .julio{
-        border-style: solid;
-        border-color: var(--primary-hover);
-        width: 100%;
-        border-radius: 20px;
+        text-align: center;
     
     }
     #imgLpf{
