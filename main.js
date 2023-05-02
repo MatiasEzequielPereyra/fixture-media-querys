@@ -24,6 +24,43 @@ iconList.addEventListener('click',function(){
                                         
                                                          //INTERACCION BOTONES DE LOS MESES 
 
+                                                         
+document.addEventListener("DOMContentLoaded", function() {
+const   mayo = document.getElementById("mayo");
+var botonMayo = document.getElementById("botonMayo")
+
+const   junio = document.getElementById("junio");
+var botonJunio = document.getElementById("botonJunio")
+
+const   julio = document.getElementById("julio");
+var botonJulio = document.getElementById("botonJulio")
+
+
+
+if(botonMayo.classList.contains('clicked')){
+    
+    junio.classList.add('inactive');
+    julio.classList.add('inactive');
+
+}
+
+botonJunio.addEventListener('click',function(){
+    mayo.classList.add('inactive');
+    botonMayo.classList.remove('clicked')
+    julio.classList.add('inactive');
+});
+botonJulio.addEventListener('click',function(){
+    mayo.classList.add('inactive');
+    junio.classList.add('inactive');
+})
+botonMayo.addEventListener('click',function(){
+    junio.classList.add('inactive');
+    julio.classList.add('inactive');
+})
+});
+
+
+
 
 document.addEventListener("DOMContentLoaded",function(){
     var botonMayo = document.getElementById("botonMayo");
@@ -37,9 +74,18 @@ document.addEventListener("DOMContentLoaded",function(){
    document.addEventListener("DOMContentLoaded",function(){
     var   botonJunio = document.getElementById("botonJunio");
     const mesJunio = document.getElementById("junio");
+    
 
-    mesJunio.addEventListener('click',function(){
+    botonJunio.addEventListener('click',function(){
         mesJunio.classList.toggle('inactive')
+    })
+   })
+   document.addEventListener("DOMContentLoaded",function(){
+    var   botonJulio = document.getElementById("botonJulio");
+    const mesJulio = document.getElementById("julio");
+
+    botonJulio.addEventListener('click',function(){
+        mesJulio.classList.toggle('inactive')
     })
    })
 
@@ -47,7 +93,7 @@ document.addEventListener("DOMContentLoaded",function(){
     var myButton = document.getElementById("botonMayo");
 
     myButton.addEventListener("click", function() {
-      myButton.classList.add("clicked");
+      myButton.classList.toggle("clicked");
     });
    })
    document.addEventListener("DOMContentLoaded",function(){
@@ -61,24 +107,33 @@ document.addEventListener("DOMContentLoaded",function(){
     var myButton = document.getElementById("botonJulio");
 
     myButton.addEventListener("click", function() {
-      myButton.classList.add("clicked");
+      myButton.classList.toggle("clicked");
     });
    })
 
    document.addEventListener('DOMContentLoaded',function(){
 
-    function toggleClickedClass(button) {
-        var buttons = document.querySelectorAll(".clicked");
-      
-        buttons.forEach(function(otherButton) {
-          if (otherButton !== button && otherButton.classList.contains("clicked")) {
-            otherButton.classList.remove("clicked");
-          }
-        });
-      
-        button.classList.add("clicked");
-      }
-      
+    // Get all buttons
+    const buttons = document.querySelectorAll('button');
+
+    // Initialize the currently clicked button variable to null
+    let currentlyClicked = null;
+
+    // Add click event listener to each button
+    buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    // Remove "clicked" state from the previously clicked button
+    if (currentlyClicked) {
+      currentlyClicked.classList.remove('clicked');
+    }
+
+    // Add "clicked" state to the newly clicked button
+    button.classList.add('clicked');
+
+    // Set the currently clicked button variable to the newly clicked button
+    currentlyClicked = button;
+  });
+});
         
 
    })
