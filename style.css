@@ -64,6 +64,7 @@ body {
     gap: 1rem;
     padding: 1rem;
     margin-bottom: 50px;  
+    text-align: center;
   
     
 }
@@ -167,8 +168,8 @@ h5 {
     font-size: 16px;
     font-weight:bold ;
     margin-bottom: 5px;
-    margin-right: 33px;
-    margin-left: 40px;
+    margin-right: 3px;
+    margin-left: 0px;
     
     
 }
@@ -179,9 +180,9 @@ h5 {
 .estadio {
     font-size: 14px;
     color: #666666;
-    margin-bottom: 20px;
-    position: relative;
-    
+    margin-bottom: 1px;
+    text-align: center;
+    display: inline-block;
 }
 
 
@@ -217,15 +218,13 @@ h5 {
 }
 
 .equipos{
-    display: flex;
+    display:inline-block;
     text-align:left;
     margin-left:11.4%;
     margin-top:30px;
     margin-bottom: 5px;
 }
-.estadio{
-    margin-left: 38%;
-}
+
 .separador{
     margin-top: 10px;
     width: 100%;
@@ -446,7 +445,12 @@ nav{
     border-style: solid;
     border-color: var(--primary-hover);
 }
-
+.headerMes{
+    text-align: center;
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 1.5em;
+}
 
 
 
@@ -463,60 +467,17 @@ nav{
     }
 }
                 /*SMALL DEVICES*/
-@media screen and (max-width: 480px) {
-    .body{
-        margin-top: -190px;
-        padding-top : 0px;
-    }
-    .mainContainer{
-        transform: scale(0.8);
-        margin-top: -293px;
-    }
-    .infoPartido {
-        width: 500px;
-    }
-    #calendarioNavBar{
-       text-align: center;
-        margin-left: 13px;
-       font-size: 33px;
-    }
-    .estadio{
-        margin-left: 160px;
-        
-    }
-    .equipos{
-        margin-left: 60px;
-    }
-    .listIcon{
-        margin-left: 30px;
-        height: 1px;
-        margin-top: -50px;
-    }
-    .linea1,.linea2,.linea3,.linea4{
-        height: 2px;
-    }
-    .escudoCalendario{
-        margin-right: 35px;
-    }
-    .imgTorneo{
-        margin-left:10px ;
-    }
-    .topScreen{
-        top: 0;
-        margin-top: -110px;
-        width: 110%;
-        margin-left: -21px;
-    }
-   
-}
+
 @media screen and (max-width: 360px) {
     .infoPartido {
-        width: 428px;
-        
+        width: 348px;
+        height: 398px;        
+        margin: 14px 14px 14px 14px;
+        text-align: center;
     }
     #calendarioNavBar{
         font-size: 28px;
-        margin-top: 9px;
+        margin-top: px;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -525,7 +486,9 @@ nav{
         transform: scale(0.8);
     }
     .topScreen{
-        margin-top: -78px;
+        margin-top: -71px;
+        width: 110%;
+        margin-left: -18px;
     }
     .body{
         padding-top: 50px;
@@ -533,13 +496,15 @@ nav{
     .equipos{
         margin-left: 30px;
         font-size: 14px;
+        text-align: center;
     }
     h5{
-        font-size: 12px;
+        justify-content: center;
+        display: inline-block;
+        font-size: 16px;
     }
     .estadio{
-        margin-left: 120px;
-        
+        text-align: right;        
     }
     .contenedorTorneo{
         margin-left: -50px;
@@ -548,46 +513,80 @@ nav{
         margin-right: 5px;
     }
     .topSquare{
-        width: 425.6px;
-        border-top-right-radius: 17px;
-        border-top-left-radius: 17px;
+        width: 345.8px;
+        border-top-right-radius: 18.7px;
+        border-top-left-radius: 18.7px;
+        font-size: 1em;
     }
     .listIcon{
-        margin-top: -42px;
-        margin-left: 40px;
+        margin-top: -2px;
+        margin-left: 5px;
     }
     .escudoCalendario{
-        margin-right: 50px;
+        margin-right: 10px;
         margin-top: 5px;
     }
     .torneo{
-        margin-left: 280px;
+        margin-left: 200px;
         margin-right: 4px;
+    }
+    .mayo{
+        border-style: solid;
+        border-color: var(--primary-hover);
+        width: 100%;
+        border-radius: 20px;
+    
+    }
+    .junio{
+        border-style: solid;
+        border-color: var(--primary-hover);
+        width: 100%;
+        border-radius: 20px;
+    
+    }
+    .julio{
+        border-style: solid;
+        border-color: var(--primary-hover);
+        width: 100%;
+        border-radius: 20px;
+    
+    }
+    #imgLpf{
+        margin-left: 320px;
+    }
+    .guion{
+        margin-left: 1px;
     }
 
 }
 @media only screen and (min-width: 361px) and (max-width: 480px) {
     .infoPartido {
         width: calc(100% - 40px);
-        transform: scale(0.93);
+        transform: scale(0.63);
+        margin-bottom: 20px;
     }
     #calendarioNavBar{
-        font-size: 2em;
+        font-size: 1.3em;
     }
     .topScreen{
-        margin-top: -88px;
+        margin-top: -1px;
         position: fixed;
     }
-    .body{
-        margin-top: 100px;
-    }
+ 
     .escudoCalendario{
-        margin-right: 80px;
+        margin-right: 10px;
     }
     .listIcon{
-        margin-left: 50px;
+        margin-left: 10px;
+    }
+    .meses{
+        margin-top: -120px;
+    }
+    .mayo{
+        margin-bottom: 10px;
     }
     .topSquare{
+        
         width: 109%;
         border-top-right-radius: 18.9px;
         border-top-left-radius: 18.9px;
