@@ -416,14 +416,6 @@ nav{
     margin-left: 10px;
     
 }
-.linea1:hover , .linea2:hover , .linea3:hover{
-    width: 35px;
-    height: 3px;
-    transform: scale(.7);
-    margin-top: 8px;
-    margin-left: 10px;
-    
-}
 .infoPartido:hover{
     transform: scale(1.01);
     margin-bottom: 30px;
