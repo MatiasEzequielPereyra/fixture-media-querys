@@ -24,6 +24,10 @@ iconList.addEventListener('click',function(){
                                         
                                                          //INTERACCION BOTONES DE LOS MESES 
 
+
+
+
+                                                         //PARA MOSTRAR SOLAMENTE 1 MES 
                                                          
 document.addEventListener("DOMContentLoaded", function() {
 const   mayo = document.getElementById("mayo");
@@ -59,8 +63,45 @@ botonMayo.addEventListener('click',function(){
 })
 });
 
+document.addEventListener("DOMContentLoaded",function(){
+    const   mayo = document.getElementById("mayo");
+    var botonMayo = document.getElementById("botonMayo")
+
+    const   junio = document.getElementById("junio");
+    var botonJunio = document.getElementById("botonJunio")
+
+    const   julio = document.getElementById("julio");
+    var botonJulio = document.getElementById("botonJulio")
 
 
+    botonMayo.addEventListener('click',function(){
+        let buttonClicked = false;
+        if(!buttonClicked){
+            mayo.classList.add('inactive');
+            buttonClicked = true;
+        }else{
+            console.log('PIRRO')
+        }
+    });
+    botonJunio.addEventListener('click',function(){
+        let buttonClicked = false;
+        if(!buttonClicked){
+            junio.classList.add('inactive');
+            buttonClicked = true;
+        }else{
+            console.log('PIRRO')
+        }
+    });
+    botonJulio.addEventListener('click',function(){
+        let buttonClicked = false;
+        if(!buttonClicked){
+            julio.classList.add('inactive');
+            buttonClicked = true;
+        }else{
+            console.log('PIRRO')
+        }
+    });
+});
 
 document.addEventListener("DOMContentLoaded",function(){
     var botonMayo = document.getElementById("botonMayo");
@@ -113,6 +154,9 @@ document.addEventListener("DOMContentLoaded",function(){
 
    document.addEventListener('DOMContentLoaded',function(){
 
+
+
+    // PARA ELIMINAR EL HOVER DE OTROS BOTONES
     // Get all buttons
     const buttons = document.querySelectorAll('button');
 
