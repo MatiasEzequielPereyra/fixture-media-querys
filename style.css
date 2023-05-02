@@ -312,8 +312,8 @@ nav{
     width: 85px;
     justify-content:right;
     right: 1;
-    margin-bottom: 18px;
-    margin-left: 100px;
+    margin-bottom: -68px;
+    margin-left: -5px;
     margin-right: 40px;
     position:absolute;
     color: white;
@@ -399,20 +399,34 @@ nav{
    padding: 0px;
    width: 50px ;
    height: 50px;
-   margin-top: 0px;
+   margin-top: 10px;
+   margin-bottom: -10px;
    
 }
 
 .listIcon:hover{
     cursor: pointer;
+    transform: rotateX('50');    
 }
-.linea1 , .linea2 , .linea3,.linea4{
+.linea1 , .linea2 , .linea3{
     width: 35px;
-    height: 3px;
+    height: 4px;
     background-color: white;
     margin-top: 8px;
     margin-left: 10px;
     
+}
+.linea1:hover , .linea2:hover , .linea3:hover{
+    width: 35px;
+    height: 3px;
+    transform: scale(.7);
+    margin-top: 8px;
+    margin-left: 10px;
+    
+}
+.infoPartido:hover{
+    transform: scale(1.01);
+    margin-bottom: 30px;
 }
 
 
