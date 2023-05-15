@@ -1,7 +1,7 @@
 
     
     
-    // DARK BUTTON
+     // DARK BUTTON
 document.addEventListener("DOMContentLoaded", function() {
     var darkButton = document.getElementById("darkButton");
     
@@ -31,7 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const   junio = document.getElementById("junio");
             const   julio = document.getElementById("julio");
             
-            
+            lpf.classList.toggle('clicked');
+            btnAddInactive.classList.remove('clicked');
                 infoPartido.forEach(function(element){
                     if(element.id === "copaLibertadores"){
                         element.classList.toggle('inactive');
@@ -51,7 +52,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const   junio = document.getElementById("junio");
             const   julio = document.getElementById("julio");
             
-            
+            btnAddInactive.classList.toggle('clicked');
+            lpf.classList.remove('clicked');
                 infoPartido.forEach(function(element){
                     if(element.id !== "copaLibertadores"){
                         element.classList.toggle('inactive');
