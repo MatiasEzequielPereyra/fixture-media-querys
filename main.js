@@ -1,4 +1,5 @@
 
+    
     // DARK BUTTON
 document.addEventListener("DOMContentLoaded", function() {
     var darkButton = document.getElementById("darkButton");
@@ -22,8 +23,28 @@ document.addEventListener("DOMContentLoaded", function() {
           // Find the button element and add the click event listener
           var btnAddInactive = document.getElementById("btnAddInactive");
           var infoPartido = document.querySelectorAll(".infoPartido");
-          
+          var lpf = document.getElementById('btnTorneoLpf');
 
+          lpf.addEventListener("click", function(){
+            const   mayo = document.getElementById("mayo");
+            const   junio = document.getElementById("junio");
+            const   julio = document.getElementById("julio");
+            
+            
+                infoPartido.forEach(function(element){
+                    if(element.id === "copaLibertadores"){
+                        element.classList.toggle('inactive');
+                        mayo.classList.remove('inactive');
+                        junio.classList.remove('inactive');
+                        julio.classList.remove('inactive');
+                        
+                        
+                    }else{
+                        element.classList.remove('inactive');
+                    }
+                    
+                })
+            })
           btnAddInactive.addEventListener("click", function(){
             const   mayo = document.getElementById("mayo");
             const   junio = document.getElementById("junio");
@@ -33,8 +54,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 infoPartido.forEach(function(element){
                     if(element.id !== "copaLibertadores"){
                         element.classList.toggle('inactive');
-                       
-                        junio.classList.add('inactive');
+                       junio.classList.remove('inactive');
+                       julio.classList.remove('inactive');
+                       mayo.classList.remove('inactive');
                         
                     }else{
                         element.classList.remove('inactive');
@@ -228,4 +250,5 @@ document.addEventListener("DOMContentLoaded",function(){
   //-----------------------------------------------------------------------------------------------------------------------------------------------
 
  // MENU -->
+
 
