@@ -537,7 +537,15 @@ a{
   .hamburger-menu.open .line:nth-child(3) {
     transform: translateY(-11px) rotate(-45deg);
   }
-  
+   #btnAddInactive.clicked{
+    background-color: #333;
+    color: white;
+  }
+  #btnTorneoLpf.clicked{
+    background-color: #333;
+    color:white;
+  }
+
 
 
 
