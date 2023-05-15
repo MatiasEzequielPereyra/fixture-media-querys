@@ -310,19 +310,15 @@ nav{
 
 .dark{
     width: 85px;
-    justify-content:right;
-    right: 1;
-    margin-bottom: -68px;
-    margin-left: -5px;
-    margin-right: 40px;
-    position:absolute;
+    position: absolute;
     color: white;
     background-color: #1a1a1a;
     border-style: none;
     border-width: .8px;
     cursor:pointer;
     border-radius: 80px;
-    margin-top: 17px;
+    margin-left: 15px;
+    margin-top: -15px;
 }
 .darkModeImage{
     position: absolute;
@@ -374,7 +370,13 @@ nav{
 .dark-mode .topSquare{
     background-color: var(--horario);
 }
-
+.dark-mode .menu{
+    background-color:var(--primary-hover);
+    
+}
+.dark-mode ul li a{
+    color: white;
+}
 
 #calendarioNavBar{
    
@@ -416,10 +418,62 @@ nav{
     margin-left: 10px;
     
 }
-.infoPartido:hover{
-    transform: scale(1.01);
-    margin-bottom: 30px;
+.menu {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 130px;
+    left: 0;
+    width: 420px;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    transition: background-color 0.3s ease;
+    
+  }
+
+  #btnAddInactive:hover{
+    cursor: pointer;
+  }
+  
+  /* Reset default styles for the list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-family: "poppins";
 }
+
+
+
+/* Style the list items */
+ ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+a{
+    margin-top: 5px;
+    margin-left: 15px;
+    position: flex
+}
+
+/* Style the links */
+ ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+}
+
+/* Change the link background color on hover */
+ ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+  
 
 
 .inactive{
@@ -457,6 +511,33 @@ nav{
     font-weight: 500;
     font-size: 1.5em;
 }
+
+
+.hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background-color: var(--white-90);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .hamburger-menu.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger-menu.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.open .line:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  
 
 
 
@@ -554,47 +635,128 @@ nav{
     .guion{
         margin-left: 1px;
     }
+   .meses{
+    margin-top: 60px;
+   }
+
+
+
+  
+    
 
 }
 @media only screen and (min-width: 361px) and (max-width: 480px) {
     .infoPartido {
-        width: calc(100% - 40px);
-        transform: scale(0.63);
-        margin-bottom: 20px;
+        width: 348px;
+        height: 398px;        
+        margin: 14px 14px 14px 14px;
+        text-align: center;
     }
     #calendarioNavBar{
-        font-size: 1.3em;
-    }
-    .topScreen{
-        margin-top: -1px;
-        position: fixed;
-    }
- 
-    .escudoCalendario{
+        font-size: 28px;
+        margin-top: px;
+        margin-left: 10px;
         margin-right: 10px;
     }
-    .listIcon{
-        margin-left: 10px;
+    .mainContainer{
+        margin-top: -309px;
+        transform: scale(1);
+    }
+    .topScreen{
+        margin-top: 29px;
+        width: 110%;
+        margin-left: -20px;
+        transform: scale(1);
     }
     .meses{
-        margin-top: -120px;
+        margin-top: 100px;
     }
-    .mayo{
-        margin-bottom: 10px;
+    .body{
+        padding-top: 50px;
     }
-    .topSquare{
-        
-        width: 109%;
-        border-top-right-radius: 18.9px;
-        border-top-left-radius: 18.9px;
+    .equipos{
+        margin-left: 30px;
+        font-size: 14px;
+        text-align: center;
+    }
+    h5{
+        justify-content: center;
+        display: inline-block;
+        font-size: 16px;
+    }
+    .estadio{
+        text-align: right;        
+    }
+    .contenedorTorneo{
+        margin-left: -50px;
     }
     .nombreTorneo{
-        margin-top: 24px;
-    
+        margin-right: 5px;
+    }
+    .topSquare{
+        width: 345.8px;
+        border-top-right-radius: 18.7px;
+        border-top-left-radius: 18.7px;
+        font-size: 1em;
+    }
+    .listIcon{
+        margin-top: -2px;
+        margin-left: 5px;
+    }
+    .escudoCalendario{
+        margin-right: 10px;
+        margin-top: 5px;
     }
     .torneo{
-        margin-left:280px;
+        margin-left: 200px;
+        margin-right: 4px;
     }
+    .mayo{
+        text-align: center;
+    
+    }
+    .junio{
+      text-align: center;
+    
+    }
+    .julio{
+        text-align: center;
+    
+    }
+    #imgLpf{
+        margin-left: 320px;
+    }
+    .guion{
+        margin-left: 1px;
+    }
+    
+
+
+.hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background-color: var(--white-90);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .hamburger-menu.open .line:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+  
+  .hamburger-menu.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.open .line:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  
 }
 @media only screen and (min-width: 482px) and (max-width:607px){
     .torneo{
@@ -606,3 +768,7 @@ nav{
         border-top-left-radius: 18.9px;
     }
 }
+
+
+
+
