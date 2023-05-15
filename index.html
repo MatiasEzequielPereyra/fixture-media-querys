@@ -21,6 +21,8 @@
 <div class="mainContainer">
 <body>
 
+   
+      
 
     <!-- NAV BAR TOP SCREEN-->
     <nav class="topScreen">
@@ -28,16 +30,27 @@
         
         
         
-        <div  id='iconList'class="listIcon">
-            <div class="linea1"></div>
-            <div class="linea2"></div>
-            <div class="linea3"></div>
-            <div class="linea4"></div>
+        <div  id='iconList'class="hamburger-menu ">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line" id="linea3"></div>
+            
         </div>
+
+        <div class="menu inactive" id="top-left menu">
+            <ul>
+                <li><a id="btnAddInactive" >LIBERTADORES</a></li>
+                <li><a href="#">TORNEO LPF</a></li>
+                <li> <button class="dark" id="darkButton">Dark Mode</button></li>
+              </ul>
+           
+        </div>
+
+
         <h5 id="calendarioNavBar">CALENDARIO 2023 RIVER PLATE</h5>
         <img src="https://riveridstorage.blob.core.windows.net/escudos/logo-river.svg" alt="" class="escudoCalendario">
 
-        <button class="dark" id="darkButton">Dark Mode</button>
+        
  
     </nav>
     
@@ -49,9 +62,11 @@
    
    <div class="mayo" id="mayo">
     <span class="headerMes">MAYO</span>
-   <!-- PARTIDO :FLUMINENSE VS RIVER  -->
-    <div class="infoPartido" >
 
+
+   <!-- PARTIDO :FLUMINENSE VS RIVER  -->
+    <div class="infoPartido" id="copaLibertadores" >
+        
             <!-- PARTE SUPERIOR DE LA INFO-->
             <div class="topSquare">
                 <div class="fechaHora">
@@ -85,9 +100,9 @@
             <!-- PARTE INFERIOR DEL BOX , PREDICCION-->
                 <h4 class='prediccion'>PREDICCIÓN</h4>
                     <div class="inputs"> 
-                        <input type="text" class="resultado1" autofocus>
+                        <input type="text" class="resultado1" autofocus value="5">
                             <span>-</span>
-                        <input type="text" class="resultado2">
+                        <input type="text" class="resultado2" value="1">
                     </div>
     </div>
      <!-- PARTIDO : RIVER VS BOCA -->
@@ -126,9 +141,9 @@
         <!-- PARTE INFERIOR DEL BOX , PREDICCION-->
             <h4 class='prediccion'>PREDICCIÓN</h4>
                 <div class="inputs"> 
-                    <input type="text" class="resultado1" autofocus>
+                    <input type="text" class="resultado1" autofocus value="1">
                         <span>-</span>
-                    <input type="text" class="resultado2">
+                    <input type="text" class="resultado2" value="0">
                 </div>
     </div>
      <!-- PARTIDO : TALLERES VS RIVER -->
@@ -167,9 +182,9 @@
         <!-- PARTE INFERIOR DEL BOX , PREDICCION-->
             <h4 class='prediccion'>PREDICCIÓN</h4>
                 <div class="inputs"> 
-                    <input type="text" class="resultado1" autofocus>
+                    <input type="text" class="resultado1" autofocus value="2">
                         <span>-</span>
-                    <input type="text" class="resultado2">
+                    <input type="text" class="resultado2" value="1">
                 </div>
     </div>
      <!-- PARTIDO :RIVER VS PLATENSE -->
@@ -214,7 +229,7 @@
                 </div>
     </div>  
      <!-- PARTIDO : SPORTING CRISTAL VS RIVER -->
-    <div class="infoPartido">
+    <div class="infoPartido" id="copaLibertadores">
 
         <!-- PARTE SUPERIOR DE LA INFO-->
         <div class="topSquare">
@@ -345,7 +360,7 @@
                 </div>
     </div>
      <!-- PARTIDO : RIVER PLATE- FLUMINENSE -->
-    <div class="infoPartido">
+    <div class="infoPartido" id="copaLibertadores">
 
     <!-- PARTE SUPERIOR DE LA INFO-->
     <div class="topSquare" >
@@ -469,7 +484,7 @@
             </div>
     </div>  
      <!-- PARTIDO :RIVER PLATE VS THE STRONGEST -->
-    <div class="infoPartido">
+    <div class="infoPartido" id="copaLibertadores">
 
     <!-- PARTE SUPERIOR DE LA INFO-->
     <div class="topSquare">
