@@ -1,3 +1,5 @@
+
+    // DARK BUTTON
 document.addEventListener("DOMContentLoaded", function() {
     var darkButton = document.getElementById("darkButton");
     
@@ -12,15 +14,55 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+    // LINK COPA LIBERTADORES Y LPF ->
+
+    document.addEventListener("DOMContentLoaded", function() {
+       
+          
+          // Find the button element and add the click event listener
+          var btnAddInactive = document.getElementById("btnAddInactive");
+          var infoPartido = document.querySelectorAll(".infoPartido");
+          
+
+          btnAddInactive.addEventListener("click", function(){
+            const   mayo = document.getElementById("mayo");
+            const   junio = document.getElementById("junio");
+            const   julio = document.getElementById("julio");
+            
+            
+                infoPartido.forEach(function(element){
+                    if(element.id !== "copaLibertadores"){
+                        element.classList.toggle('inactive');
+                       
+                        junio.classList.add('inactive');
+                        
+                    }else{
+                        element.classList.remove('inactive');
+                    }
+                    
+                })
+            }
+            
+          );
+          
+        });
+
+    // MENU OPEN-CLOSE
 document.addEventListener("DOMContentLoaded", function() {
 var iconList = document.getElementById("iconList");
+var menu = document.getElementById("top-left menu");
+var hambIcon = document.getElementById("iconList");
+
 
 iconList.addEventListener('click',function(){
-    darkButton.classList.toggle('inactive')
+    menu.classList.toggle('inactive');
+    hambIcon.classList.toggle('open');
 })
 });
 
 
+
+    
                                         
                                                          //INTERACCION BOTONES DE LOS MESES 
 
@@ -184,3 +226,6 @@ document.addEventListener("DOMContentLoaded",function(){
 
 
   //-----------------------------------------------------------------------------------------------------------------------------------------------
+
+ // MENU -->
+
