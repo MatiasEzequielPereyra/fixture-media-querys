@@ -442,6 +442,7 @@ ul {
   margin: 0;
   text-align: left;
   font-family: "poppins";
+  top:20%;
 }
 
 
@@ -603,9 +604,9 @@ a{
         transform: scale(0.8);
     }
     .topScreen{
-        margin-top: -71px;
+        margin-top: -78px;
         width: 110%;
-        margin-left: -18px;
+        margin-left: -20px;
     }
     .body{
         padding-top: 50px;
@@ -666,9 +667,89 @@ a{
         margin-left: 1px;
     }
    .meses{
-    margin-top: 20px;
+    margin-top: 50px;
    }
+   .menu {
+    position: absolute;
+    margin-top: 52px;
+    width: 30em;
+    margin-left:-18px;
+    height: 69px;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease;
+    transform:translateX(4px) scale(.8) translateY(39px);
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* Active state for menu */
+  .menu.active {
+    top: -30%;
+    opacity: 1;
+    visibility: visible;
+    transform:translateX(4px) scale(.8) translateY(39px);
+}
+  
+.hamburger-menu{
+margin-left: 40px;
+}
+#calendarioNavBar{
+font-size: 1.4em;
+}
+.escudoCalendario{
+margin-right: 28px;
+}
+.menu{
+transform: scale(.8);
+}
+.hamburger-menu {
+display: inline-block;
+cursor: pointer;
+}
 
+.line {
+width: 30px;
+height: 3px;
+margin: 6px 0;
+background-color: var(--white-90);
+transition: transform 0.4s ease-out;
+}
+
+.hamburger-menu.open .line:nth-child(1) {
+transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.open .line:nth-child(2) {
+opacity: 0;
+}
+
+.hamburger-menu.open .line:nth-child(3) {
+transform: translateY(-11px) rotate(-45deg);
+}
+ul{
+top: 50%;
+margin-top: -3px;
+text-align:left;
+}
 
 
   
@@ -763,6 +844,57 @@ a{
     
 
 
+      
+      /* Menu Styles */
+      .menu {
+        position: fixed;
+        top: -70px;
+        left: 0;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease;
+        transform:translateX(4px) scale(.8) translateY(39px);
+      }
+      
+      .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .menu li {
+        margin-bottom: 10px;
+      }
+      
+      .menu a {
+        color: #000;
+        text-decoration: none;
+      }
+      
+      /* Active state for menu */
+      .menu.active {
+        top: -170%;
+        opacity: 1;
+        visibility: visible;
+        transform:translateX(4px) scale(.8) translateY(39px);
+}
+      
+.hamburger-menu{
+    margin-left: 40px;
+}
+#calendarioNavBar{
+    font-size: 1.4em;
+}
+.escudoCalendario{
+    margin-right: 28px;
+}
+.menu{
+    transform: scale(.3);
+}
 .hamburger-menu {
     display: inline-block;
     cursor: pointer;
@@ -773,11 +905,11 @@ a{
     height: 3px;
     margin: 6px 0;
     background-color: var(--white-90);
-    transition: transform 0.2s ease-out;
+    transition: transform 0.4s ease-out;
   }
   
   .hamburger-menu.open .line:nth-child(1) {
-    transform: translateY(11px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
   }
   
   .hamburger-menu.open .line:nth-child(2) {
@@ -787,11 +919,55 @@ a{
   .hamburger-menu.open .line:nth-child(3) {
     transform: translateY(-11px) rotate(-45deg);
   }
-  
+ul{
+    top: 50%;
+    margin-top: -3px;
+    text-align:left;
+}
 }
 
 
 @media only screen and (min-width: 361px) and (max-width: 440px) {
+    
+      
+      /* Menu Styles */
+      .menu {
+        position: fixed;
+        top: -70px;
+        left: 0;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease;
+        transform:translateX(4px) scale(.8) translateY(39px);
+      }
+      
+      .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .menu li {
+        margin-bottom: 10px;
+      }
+      
+      .menu a {
+        color: #000;
+        text-decoration: none;
+      }
+      
+      /* Active state for menu */
+      .menu.active {
+        top: -170%;
+        opacity: 1;
+        visibility: visible;
+        transform:translateX(4px) scale(.8) translateY(39px);
+}
+      
 .hamburger-menu{
     margin-left: 40px;
 }
@@ -814,7 +990,7 @@ a{
     height: 3px;
     margin: 6px 0;
     background-color: var(--white-90);
-    transition: transform 0.2s ease-out;
+    transition: transform 0.4s ease-out;
   }
   
   .hamburger-menu.open .line:nth-child(1) {
@@ -828,6 +1004,12 @@ a{
   .hamburger-menu.open .line:nth-child(3) {
     transform: translateY(-11px) rotate(-45deg);
   }
+ul{
+    top: 50%;
+    margin-top: -3px;
+    text-align:left;
+}
+
 }
 @media only screen and (min-width: 482px) and (max-width:607px){
     .torneo{
@@ -839,6 +1021,30 @@ a{
         border-top-left-radius: 18.9px;
     }
 }
+
+
+
+@media only screen and (max-height: 761px){
+    .topScreen{
+        margin-top:-60px;
+    }
+    
+}
+@media only screen and (max-height: 670px){
+    .topScreen{
+        margin-top:28px;
+    }
+    #btnAddInactive:hover{
+        cursor: pointer;
+      }
+      a:hover{
+        cursor: pointer;
+      }
+      .mesesBtn:hover{
+        cursor: pointer;
+      }
+}
+
 
 
 
