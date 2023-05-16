@@ -283,7 +283,6 @@ input:focus {
 }
 
 .topScreen {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -298,6 +297,7 @@ input:focus {
     background-color: var(--primary-dark);
 }
 nav{
+    position: fixed;
     padding: 0px;
     display: flex;
     justify-content: right;
@@ -537,7 +537,9 @@ a{
   .hamburger-menu.open .line:nth-child(3) {
     transform: translateY(-11px) rotate(-45deg);
   }
-   #btnAddInactive.clicked{
+  
+
+  #btnAddInactive.clicked{
     background-color: #333;
     color: white;
   }
@@ -546,8 +548,28 @@ a{
     color:white;
   }
 
+  .alertMessage{
+    font-weight: bold;
+    color: white;
+    display: none;
+  position: fixed;
+  top: 14%;
+  left: 3%;
+  transform: scale(1);
+  background-color: var(--primary-hover);
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  }
 
-
+@media screen  and (max-height: 730px) {
+    .topScreen{
+        margin-top: 50px;
+    }
+    
+}
 
                 /*AVERAGE DEVICES*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -563,7 +585,7 @@ a{
 }
                 /*SMALL DEVICES*/
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px){
     .infoPartido {
         width: 348px;
         height: 398px;        
@@ -644,7 +666,7 @@ a{
         margin-left: 1px;
     }
    .meses{
-    margin-top: 60px;
+    margin-top: 20px;
    }
 
 
@@ -671,13 +693,14 @@ a{
         transform: scale(1);
     }
     .topScreen{
+        position: absolute;
         margin-top: 29px;
         width: 110%;
         margin-left: -20px;
         transform: scale(1);
     }
     .meses{
-        margin-top: 100px;
+        margin-top: 150px;
     }
     .body{
         padding-top: 50px;
@@ -766,6 +789,46 @@ a{
   }
   
 }
+
+
+@media only screen and (min-width: 361px) and (max-width: 440px) {
+.hamburger-menu{
+    margin-left: 40px;
+}
+#calendarioNavBar{
+    font-size: 1.4em;
+}
+.escudoCalendario{
+    margin-right: 28px;
+}
+.menu{
+    transform: scale(.8);
+}
+.hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    margin: 6px 0;
+    background-color: var(--white-90);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .hamburger-menu.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger-menu.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.open .line:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+}
 @media only screen and (min-width: 482px) and (max-width:607px){
     .torneo{
         margin-left: 280px;
@@ -776,6 +839,7 @@ a{
         border-top-left-radius: 18.9px;
     }
 }
+
 
 
 
