@@ -1,7 +1,7 @@
 
     
     
-     // DARK BUTTON
+      // DARK BUTTON
 document.addEventListener("DOMContentLoaded", function() {
     var darkButton = document.getElementById("darkButton");
     
@@ -15,7 +15,21 @@ document.addEventListener("DOMContentLoaded", function() {
     
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+        var topScreen = document.querySelectorAll('.topScreen');
+        var menu = document.getElementById('.top-left menu');
+        var botonLibertadores = document.getElementById('btnAddInactive');
+        var botonJulio = document.getElementById('botonJulio');
 
+
+        if(botonLibertadores.classList.contains('clicked') && botonJulio.classList.contains('clicked')){
+            topScreen.style.width = '130%';
+
+
+        }
+        
+
+});
     // LINK COPA LIBERTADORES Y LPF ->
 
     document.addEventListener("DOMContentLoaded", function() {
@@ -64,14 +78,26 @@ document.addEventListener("DOMContentLoaded", function() {
                     }else{
                         element.classList.remove('inactive');
                     }
+
                     
                 })
             }
             
           );
+           
+        
+        
+  
           
+
+
         });
 
+
+
+
+
+        
     // MENU OPEN-CLOSE
 document.addEventListener("DOMContentLoaded", function() {
 var iconList = document.getElementById("iconList");
@@ -121,8 +147,21 @@ botonJunio.addEventListener('click',function(){
     julio.classList.add('inactive');
 });
 botonJulio.addEventListener('click',function(){
-    mayo.classList.add('inactive');
-    junio.classList.add('inactive');
+    var libertadores = document.getElementById('btnAddInactive');
+    var alertMessage = document.getElementById('alert');
+    
+    function closeDiv(){
+        alertMessage.style.display='none';
+    }
+    setTimeout(closeDiv, 1500)
+    if(libertadores.classList.contains('clicked')){
+        alertMessage.style.display='block';
+    }else{
+        mayo.classList.add('inactive');
+        junio.classList.add('inactive');
+    }
+
+   
 })
 botonMayo.addEventListener('click',function(){
     junio.classList.add('inactive');
@@ -253,5 +292,6 @@ document.addEventListener("DOMContentLoaded",function(){
   //-----------------------------------------------------------------------------------------------------------------------------------------------
 
  // MENU -->
+
 
 
