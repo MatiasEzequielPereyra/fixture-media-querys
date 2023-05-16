@@ -1028,11 +1028,14 @@ ul{
     .topScreen{
         margin-top:-60px;
     }
+    .menu{
+        margin-top: 45px;
+    }
     
 }
 @media only screen and (max-height: 670px){
     .topScreen{
-        margin-top:28px;
+        margin-top:-47px;
     }
     #btnAddInactive:hover{
         cursor: pointer;
@@ -1042,6 +1045,12 @@ ul{
       }
       .mesesBtn:hover{
         cursor: pointer;
+      }
+      .meses{
+        margin-top: 80px;
+      }
+      .menu{
+        margin-top: 45px;
       }
 }
 
