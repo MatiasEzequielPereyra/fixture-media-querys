@@ -1,7 +1,8 @@
 
     
     
-      // DARK BUTTON
+      
+    // DARK BUTTON
 document.addEventListener("DOMContentLoaded", function() {
     var darkButton = document.getElementById("darkButton");
     
@@ -106,7 +107,9 @@ var hambIcon = document.getElementById("iconList");
 
 
 iconList.addEventListener('click',function(){
-    menu.classList.toggle('inactive');
+    menu.classList.remove('inactive')
+    menu.classList.toggle('active');
+
     hambIcon.classList.toggle('open');
 })
 });
